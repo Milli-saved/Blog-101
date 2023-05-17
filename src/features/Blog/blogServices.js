@@ -12,7 +12,9 @@ const getOneBlog = async (blogId) => {
   return response.data;
 };
 
-const blogServices = {
+const BlogServices = {
   getAllBlogs,
   getOneBlog,
 };
+
+export default BlogServices;
