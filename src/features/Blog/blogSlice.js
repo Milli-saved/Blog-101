@@ -56,6 +56,9 @@ export const blogSlice = createSlice({
       // getAllBlogs
       .addCase(getAllBlogs.pending, (state) => {
         state.isLoading = true;
+        state.isError = false;
+        state.isSuccess = false;
+        state.blogs = [];
       })
       .addCase(getAllBlogs.fulfilled, (state, action) => {
         state.isLoading = false;

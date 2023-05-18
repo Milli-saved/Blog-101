@@ -3,9 +3,10 @@ import Blog from "./Blog";
 const Blogs = ({ blogs }) => {
   return (
     <div className="col-md-10 col-lg-8 col-xl-7">
-      {blogs.map((eachBlog) => {
-        return <Blog blog={eachBlog} />;
-      })}
+      {blogs.length !== 0 &&
+        blogs.map((eachBlog) => {
+          return <Blog key={eachBlog.id} blog={eachBlog} />;
+        })}
       {/* <Blog />
       <Blog />
       <Blog /> */}

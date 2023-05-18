@@ -51,8 +51,7 @@ const HomePage = () => {
               {message}
             </p>
           )}
-
-          <Blogs blogs={blogs} />
+          {blogs.length !== 0 && <Blogs blogs={blogs} />}
         </div>
       </div>
     </>
