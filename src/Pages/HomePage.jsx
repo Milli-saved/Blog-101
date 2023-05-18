@@ -16,6 +16,7 @@ const HomePage = () => {
 
   useEffect(() => {
     dispatch(getAllBlogs());
+    // eslint-disable-next-line
   }, []);
 
   return (
