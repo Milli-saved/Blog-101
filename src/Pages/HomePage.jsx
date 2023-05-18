@@ -10,7 +10,7 @@ import Loader from "../components/Loader/Loader";
 const HomePage = () => {
   const dispatch = useDispatch();
 
-  const { blogs, isLoading, isError, isSuccess } = useSelector(
+  const { blogs, isLoading, isError, message } = useSelector(
     (state) => state.blog
   );
 
@@ -47,7 +47,7 @@ const HomePage = () => {
               }}
             >
               {" "}
-              Please Check you'r connection
+              {message}
             </p>
           )}
 
