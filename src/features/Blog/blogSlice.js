@@ -22,6 +22,7 @@ export const getAllBlogs = createAsyncThunk(
           error.response.data.message) ||
         error.message ||
         error.toString();
+      console.log("this is the error", message);
       return thunkAPI.rejectWithValue(message);
     }
   }
