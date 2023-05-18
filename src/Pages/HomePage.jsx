@@ -10,7 +10,7 @@ import Loader from "../components/Loader/Loader";
 const HomePage = () => {
   const dispatch = useDispatch();
 
-  const { blogs, blog, isLoading, isError, isSuccess } = useSelector(
+  const { blogs, isLoading, isError, isSuccess } = useSelector(
     (state) => state.blog
   );
 
@@ -27,7 +27,30 @@ const HomePage = () => {
       />
       <div className="container px-4 px-lg-5">
         <div className="row gx-4 gx-lg-5 justify-content-center">
-          {isLoading && <Loader />}
+          {isLoading && (
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <Loader />
+            </div>
+          )}
+          {isError && (
+            <p
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                color: "red",
+                fontStyle: "italic",
+              }}
+            >
+              {" "}
+              Please Check you'r connection
+            </p>
+          )}
+
           <Blogs blogs={blogs} />
         </div>
       </div>
