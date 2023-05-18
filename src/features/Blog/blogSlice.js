@@ -1,6 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import BlogServices from "./blogServices";
-import { act } from "react-dom/test-utils";
 
 const initialState = {
   blogs: [],
@@ -11,20 +10,26 @@ const initialState = {
   message: "",
 };
 
-export const getAllBlogs = createAsyncThunk("blog/getAllBlogs", async () => {
-  try {
-    return await BlogServices.getAllBlogs();
-  } catch (error) {
-    const message =
-      (error.response && error.response.data && error.response.data.message) ||
-      error.message ||
-      error.toString();
+export const getAllBlogs = createAsyncThunk(
+  "blog/getAllBlogs",
+  async (thunkAPI) => {
+    try {
+      return await BlogServices.getAllBlogs();
+    } catch (error) {
+      const message =
+        (error.response &&
+          error.response.data &&
+          error.response.data.message) ||
+        error.message ||
+        error.toString();
+      return thunkAPI.rejectWithValue(message);
+    }
   }
-});
+);
 
 export const getOneBlog = createAsyncThunk(
   "blog/getOneBlog",
-  async (blogId) => {
+  async (blogId, thunkAPI) => {
     try {
       return await BlogServices.getOneBlog(blogId);
     } catch (error) {
@@ -34,6 +39,7 @@ export const getOneBlog = createAsyncThunk(
           error.response.data.message) ||
         error.message ||
         error.toString();
+      return thunkAPI.rejectWithValue(message);
     }
   }
 );
