@@ -1,9 +1,9 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:3005";
+const API_URL = "https://server-for-blog-app.onrender.com/";
 
 const getAllBlogs = async () => {
-  const response = await axios.get(API_URL);
+  const response = await axios.get(API_URL + "all");
   return response.data;
 };
 
