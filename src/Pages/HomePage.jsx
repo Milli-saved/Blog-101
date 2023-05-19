@@ -22,7 +22,7 @@ const HomePage = () => {
   return (
     <>
       <Header
-        header="Clean Blog"
+        header="ምክረ-ጸባዖት"
         subHeading="A Blog Theme by Bootstrap"
         backgroundImage={homeHeaderBackground}
       />

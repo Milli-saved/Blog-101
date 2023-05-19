@@ -1,10 +1,17 @@
 import { Link } from "react-router-dom";
+import Book from "../assets/img/book.png";
+
 const Nav = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light" id="mainNav">
       <div className="container px-4 px-lg-5">
         <Link className="navbar-brand" to="/">
-          Bloggy
+          <img
+            style={{ width: "40px", height: "auto" }}
+            src={Book}
+            alt="book"
+          />
+          ምክረ-ጸባዖት
         </Link>
         <button
           className="navbar-toggler"

@@ -1,4 +1,3 @@
-import postBackgoundImage from "../assets/img/post-bg.jpg";
 import Header from "../components/Header";
 import contactHeaderBackground from "../../src/assets/img/contact-bg.jpg";
 
