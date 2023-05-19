@@ -25,4 +25,4 @@ Open <a href="http://localhost:3000">http://localhost:3000</a> to view it in the
 <p>Builds the app for production to the <code>build</code> folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.</p>
 
-<h3>For questions and support mail  at **million12.tenkir@gmail.com**</h3>
+<h3>For questions and support mail  at <a href="mailto:million12.tenkir@gmail.com">Million Tenkir</a></h3>
