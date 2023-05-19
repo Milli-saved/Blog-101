@@ -1,6 +1,10 @@
 <h1> Blog App </h1>
 <a><img src="./src/assets/img/screenshot.png" alt="Home page preview." /></a>
-<p> This is a blog application, The system fetches data from telegram using node-telegram-bot-api package in node. </p>
+<p> This is a blog application, The system fetches data from telegram using node-telegram-bot-api package in node. To get the backend of this project use the link below. </p>
+
+<a href="https://github.com/Milli-saved/serverForBlogApp">Link to Backend.</a>
+
+<a href="https://blog-101-nine.vercel.app/">Live Preview</a>
 
 # Version 1.0.0 - 05-19-2023
 
