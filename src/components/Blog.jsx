@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import musika from "../assets/music/hannaTrackOne.mp3";
 const Blog = ({ blog }) => {
   return (
     <>
@@ -7,10 +8,9 @@ const Blog = ({ blog }) => {
           <h2 className="post-title">{blog.postTitle}</h2>
           <h3 className="post-subtitle">{blog.postSubtitle}</h3>
         </Link>
+        <audio controls src={musika} />
         <p className="post-meta">
-          Posted by
-          <a href="#!">{blog.postedBy}</a>
-          {blog.postDate}
+          Posted by <a href="#!">{blog.postedBy}</a> {blog.postDate}
         </p>
       </div>
       <hr className="my-4" />

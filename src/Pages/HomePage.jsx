@@ -7,25 +7,25 @@ import Header from "../components/Header";
 import homeHeaderBackground from "../../src/assets/img/home-bg.jpg";
 import Loader from "../components/Loader/Loader";
 
+
 const HomePage = () => {
   const dispatch = useDispatch();
-
+  
   const { blogs, isLoading, isError, message } = useSelector(
     (state) => state.blog
-  );
-
-  useEffect(() => {
-    dispatch(getAllBlogs());
-    // eslint-disable-next-line
-  }, []);
-
-  return (
-    <>
+    );
+    
+    useEffect(() => {
+      dispatch(getAllBlogs());
+      // eslint-disable-next-line
+    }, []);
+    return (
+      <>
       <Header
         header="ምክረ-ጸባዖት"
         subHeading="ዕረፉ፡ እኔም አምላክ እንደሆንኩ እወቁ።"
         backgroundImage={homeHeaderBackground}
-      />
+        />
       <div className="container px-4 px-lg-5">
         <div className="row gx-4 gx-lg-5 justify-content-center">
           {isLoading && (

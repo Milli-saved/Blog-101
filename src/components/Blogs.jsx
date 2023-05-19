@@ -7,9 +7,6 @@ const Blogs = ({ blogs }) => {
         blogs.map((eachBlog) => {
           return <Blog key={eachBlog.id} blog={eachBlog} />;
         })}
-      {/* <Blog />
-      <Blog />
-      <Blog /> */}
 
       {/* <!-- Pager--> */}
       <div className="d-flex justify-content-end mb-4">
