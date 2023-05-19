@@ -1,5 +1,5 @@
 <h1> Blog App </h1>
-<a><img src="https://drive.google.com/file/d/1t1z2Y5H_rnmeddT9wl9nUT7KVXjYQ-SC/view?usp=sharing" alt="Home page preview." /></a>
+<a><img src="./src/assets/img/screenshot.png" alt="Home page preview." /></a>
 <p> This is a blog application, The system fetches data from telegram using node-telegram-bot-api package in node. </p>
 
 # Version 1.0.0 - 05-19-2023
