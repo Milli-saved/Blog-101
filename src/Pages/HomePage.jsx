@@ -23,7 +23,7 @@ const HomePage = () => {
     <>
       <Header
         header="ምክረ-ጸባዖት"
-        subHeading="A Blog Theme by Bootstrap"
+        subHeading="ዕረፉ፡ እኔም አምላክ እንደሆንኩ እወቁ።"
         backgroundImage={homeHeaderBackground}
       />
       <div className="container px-4 px-lg-5">
