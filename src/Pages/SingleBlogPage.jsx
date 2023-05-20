@@ -1,10 +1,15 @@
 import Header from "../components/Header";
 import contactHeaderBackground from "../../src/assets/img/contact-bg.jpg";
+import MiddlePic from "assets/img/post-sample-image.jpg";
 
 const SingleBlogPage = () => {
   return (
     <>
-      <Header header="Clean Blog" subHeading="A lot is going on here." backgroundImage={contactHeaderBackground} />
+      <Header
+        header="Clean Blog"
+        subHeading="A lot is going on here."
+        backgroundImage={contactHeaderBackground}
+      />
       {/* <header
         className="masthead"
         style={{ backgroundImage: `url(${contactHeaderBackground})` }}
@@ -61,11 +66,7 @@ const SingleBlogPage = () => {
                 change a man.
               </p>
               <a href="#!">
-                <img
-                  className="img-fluid"
-                  src="assets/img/post-sample-image.jpg"
-                  alt="..."
-                />
+                <img className="img-fluid" src={MiddlePic} alt="..." />
               </a>
               <span className="caption text-muted">
                 To go places and do things that have never been done before –
