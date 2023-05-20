@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <Header
-        header="About me"
+        header="ስለ ምክረ-ጸባዖት"
         subHeading="This is what I do"
         backgroundImage={aboutHeaderBackground}
       />
